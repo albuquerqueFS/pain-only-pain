@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "HEYYYOOOO"
+  "defaultProject": "HEYYYOOOO",
+  "cli": {
+    "analytics": false
+  }
 }
