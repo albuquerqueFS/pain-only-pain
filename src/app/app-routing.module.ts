@@ -5,19 +5,20 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home',
-  },
-  {
     path: 'home',
     component: HomeComponent,
-    data: { animation: true },
+    // loadChildren: () =>
+    //   import('./pages/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'projects',
     component: ProjectsComponent,
-    data: { animation: true },
+    // loadChildren: () =>
+    //   import('./pages/projects/projects.module').then((m) => m.ProjectsModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
   },
 ];
 
